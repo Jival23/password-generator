@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1 class="text-white">Generate a <span class="text-green">random password</span> </h1>
+        <p class="paragraph-text">Never use an insecure password again.</p>
+        
+        <h3 class="text-white">Length:</h3>
+        <input type="number" name="number" value="15" min="4" max="16" id="length-el">
+        <button class="submit-btn" onclick="updateLength()">Submit</button>
+       
+
+        <h3 class="text-white">Options:</h3>
+        <button id="nums-btn" class="no-left-btn" onclick="updateNums()">Exclude numbers</button>
+        <button id="syms-btn" class="btn" onclick="updateSyms()">Exclude symbols</button>
+        <button id="letters-btn" class="btn" onclick="updateLetters()">Exclude letters</button>
+        <hr width="97%" align="left" color="grey">
+        <button class="no-left-btn" id="generate-el" onclick="generatePasswords()">Generate passwords</button>
+        <hr width="97%" align="left" color="grey">
+        
+        <h3 class="text-white">Your new passwords:</h3>
+        <button class="out-btn" id="out1-el" onclick="copyPassword1()">Password 1</button>
+        <button class="out-btn" id="out2-el" onclick="copyPassword2()">Password 2</button>
+        <p id="feedback-el" class="feedback-text"></p>
+        <script src="index.js"></script>
+
+    </body>
+</html>
